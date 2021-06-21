@@ -7,4 +7,17 @@ description: |
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+## About Me
+Hi, my name is **Tejas Mundhe** and I am an incoming freshman at Walnut Hills High School. I enjoy playing soccer and swimming as well as computer science.
 
+## About the Project
+The *Car-Plot* project is a scatter plot of the miles per gallon(fuel efficiency) of vehicles by their weight. A linear trend line is also drawn to summarize the relationship that heavier vehicles are less fuel efficient than others.
+
+### Goals
+* Display how heavier cars are much less environmentally friendly than lighter ones
+  + Multiple different arguments required to make the trend line
+* Produce a clean looking plot with my R skills
+
+"This is Data Science"  - Preceptor
+
+[Kane’s Free High School Data Science Bootcamp](https://bootcamp.davidkane.info)

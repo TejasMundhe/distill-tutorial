@@ -5,8 +5,8 @@
       "title": "About this site",
       "description": "Some additional details about the website",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T12:50:54-04:00"
+      "contents": "\r\nAbout Me\r\nHi, my name is Tejas Mundhe and I am an incoming freshman at Walnut Hills High School. I enjoy playing soccer and swimming as well as computer science.\r\nAbout the Project\r\nThe Car-Plot project is a scatter plot of the miles per gallon(fuel efficiency) of vehicles by their weight. A linear trend line is also drawn to summarize the relationship that heavier vehicles are less fuel efficient than others.\r\nGoals\r\nDisplay how heavier cars are much less environmentally friendly than lighter ones\r\nMultiple different arguments required to make the trend line\r\n\r\nProduce a clean looking plot with my R skills\r\n“This is Data Science” - Preceptor\r\nKane’s Free High School Data Science Bootcamp\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-21T14:07:06-04:00"
     },
     {
       "path": "index.html",
@@ -14,7 +14,7 @@
       "description": "This is where I will describe my final project\n",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T12:51:01-04:00"
+      "last_modified": "2021-06-21T14:07:12-04:00"
     }
   ],
   "collections": []
