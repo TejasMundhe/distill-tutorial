@@ -9,18 +9,26 @@ site: distill::distill_website
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(ggthemes)
+library(knitr)
+library(rmarkdown)
+library(gt)
 ```
 ```{r car-plot}
-mtcars %>%
- select(mpg, wt) %>%
- ggplot(aes(x = wt, y = mpg)) +
-        geom_point() +
-        geom_smooth(method = "lm", formula = y~x, se = FALSE) +
-        theme_clean() +
-        labs(title = "Fuel Efficiency of Cars by Weight",
-             subtitle = "Heavier cars are less fuel efficient",
-             x = "Weight in Thousands (lb)",
-             y = "MPG",
-             caption = "Henderson and Vellerman (1981)")
+car_plot <- read_rds("car-plot.rds")
+ggsave("car-plot.png", plot = car_plot)
+```
+```{r table-1}
+table <- mtcars %>%
+ arrange(mpg)
+```
+```{r table-4}
+gt(table, rownames_to_stub = TRUE) %>%
+  tab_header(title = md("**1974 Automobiles**"),
+             subtitle = "The least fuel efficient cars are the heaviest") %>%
+  tab_source_note("Source: Henderson and Velleman (1981)") %>%
+  tab_spanner(label = "Variable Group 1", columns = c(mpg, cyl, disp, hp, drat))
+```
+```{r image}
+include_graphics("images/car-plot.png")
 ```
 
